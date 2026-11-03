@@ -1,24 +1,425 @@
-<!doctype html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="孟洋的个人学术主页：科研经历、研究笔记与文章讲解。" />
-    <meta name="theme-color" content="#f0fff0" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>孟洋 — 个人学术主页</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script>
-      try {
-        const redirect = sessionStorage.getItem('academic-site:redirect')
-        if (redirect && redirect.startsWith('/')) {
-          sessionStorage.removeItem('academic-site:redirect')
-          history.replaceState(null, '', redirect)
-        }
-      } catch { /* The site still works when storage is unavailable. */ }
-    </script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+Here is a complete, SEO-optimized HTML document for your project's README-style landing page, using inline styles for a clean, professional look.
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pennant - The Agentic AI Harness for Mac and iPhone | Free &amp; Open Source</title>
+<meta name="description" content="Download Pennant, the last agentic harness you'll ever need. Bring any AI model, run it locally on your Mac or iPhone, and approve everything before it is sent, deleted or paid for. Free and Apache-2.0 licensed.">
+<meta name="keywords" content="agent, agent-harness, agentic-ai, ai-agent, ai-assistant, apple-silicon, automation, claude-code, computer-use, ios, llm, local-ai, macos, mcp, ollama, open-source, openai-compatible, self-hosted, swift, swiftui">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Pennant">
+<link rel="canonical" href="https://github.com/lightmeterminiaturisation293/pennant">
+<meta property="og:type" content="website">
+<meta property="og:title" content="pennant - The Agentic AI Harness for Mac and iPhone">
+<meta property="og:description" content="Bring any model; Pennant does the rest on your Mac and iPhone, and asks before anything is sent, deleted or paid for. Free, Apache-2.0.">
+<meta property="og:url" content="https://github.com/lightmeterminiaturisation293/pennant">
+<meta property="og:site_name" content="pennant">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="pennant - The Agentic AI Harness for Mac and iPhone">
+<meta name="twitter:description" content="Bring any model; Pennant does the rest on your Mac and iPhone, and asks before anything is sent, deleted or paid for.">
+<meta name="theme-color" content="#6d5efc">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "pennant",
+  "applicationCategory": "ProductivityApplication",
+  "operatingSystem": "macOS, iOS",
+  "description": "The last agentic harness you'll ever need. Bring any model; Pennant does the rest on your Mac and iPhone, and asks before anything is sent, deleted or paid for. Free, Apache-2.0.",
+  "url": "https://github.com/lightmeterminiaturisation293/pennant",
+  "downloadUrl": "https://github.com/lightmeterminiaturisation293/pennant",
+  "license": "https://www.apache.org/licenses/LICENSE-2.0",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: #f6f7fb;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1d2330;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: #5a4dea; }
+  @media (max-width: 640px) {
+    h1 { font-size: 1.9rem !important; }
+    h2 { font-size: 1.35rem !important; }
+    .card { padding: 20px !important; }
+  }
+</style>
+</head>
+<body>
+
+<div style="background: linear-gradient(135deg, #6d5efc 0%, #00c2a8 100%); color: #ffffff; padding: 56px 20px 64px 20px; text-align: center;">
+  <div style="max-width: 860px; margin: 0 auto;">
+    <span style="display: inline-block; background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.35); padding: 6px 16px; border-radius: 999px; font-size: 0.82rem; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600;">Free &middot; Open Source &middot; Apache-2.0</span>
+    <h1 style="font-size: 2.75rem; line-height: 1.15; margin: 22px 0 16px 0; font-weight: 800; letter-spacing: -0.02em;">🎯 pennant - Your AI Agent, Fully Under Control</h1>
+    <p style="font-size: 1.15rem; max-width: 700px; margin: 0 auto 32px auto; opacity: 0.96;">
+      Bring any model. Pennant does the rest on your Mac and iPhone — and always asks before anything is sent, deleted or paid for.
+    </p>
+    <a href="https://github.com/lightmeterminiaturisation293/pennant"
+       style="display: inline-block; background: linear-gradient(135deg, #ff8a3d 0%, #ff4d8d 100%); color: #ffffff; text-decoration: none; font-size: 1.12rem; font-weight: 700; padding: 18px 42px; border-radius: 14px; box-shadow: 0 12px 28px rgba(0,0,0,0.22); border: 2px solid rgba(255,255,255,0.5);">
+      ⬇️ Download Pennant
+    </a>
+    <p style="margin: 18px 0 0 0; font-size: 0.9rem; opacity: 0.9;">No account required. No subscription. Runs on your own devices.</p>
+  </div>
+</div>
+
+<main style="max-width: 900px; margin: 0 auto; padding: 48px 20px 64px 20px;">
+
+  <section style="background: #ffffff; border-radius: 18px; padding: 32px; box-shadow: 0 4px 18px rgba(29,35,48,0.07); margin-bottom: 32px;">
+    <h2 style="font-size: 1.6rem; margin: 0 0 16px 0; color: #1d2330; font-weight: 700;">🤖 What Is Pennant?</h2>
+    <p style="margin: 0 0 16px 0; font-size: 1.02rem;">
+      Pennant is a free application that turns your computer into a personal AI assistant workspace. You choose the AI model — your own, a free local one, or a paid cloud one — and Pennant handles everything else: connecting to the model, running tasks, opening apps, organising files and following your instructions step by step.
+    </p>
+    <p style="margin: 0 0 16px 0; font-size: 1.02rem;">
+      Most AI tools work like a black box. You type a request and hope for the best. Pennant works differently: it is an <strong>agentic harness</strong>, which simply means it is the frame that holds an AI agent together and keeps it on a leash. Before the agent sends information somewhere, deletes a file or spends money, Pennant stops and asks you first. You stay in charge the entire time.
+    </p>
+    <p style="margin: 0; font-size: 1.02rem;">
+      It is built for Apple devices — your Mac and your iPhone — and it is completely self-hosted. That means your conversations and files live on your machine, not on somebody else's server.
+    </p>
+  </section>
+
+  <section style="background: #ffffff; border-radius: 18px; padding: 32px; box-shadow: 0 4px 18px rgba(29,35,48,0.07); margin-bottom: 32px;">
+    <h2 style="font-size: 1.6rem; margin: 0 0 16px 0; color: #1d2330; font-weight: 700;">✨ Why People Choose Pennant</h2>
+    <ul style="margin: 0; padding-left: 22px; font-size: 1.02rem;">
+      <li style="margin-bottom: 12px;"><strong>Bring any model.</strong> Use a free model that runs on your own computer, or connect a cloud model you already pay for. Pennant works with Ollama and with any service that speaks the OpenAI-compatible format.</li>
+      <li style="margin-bottom: 12px;"><strong>Permission prompts, always.</strong> Nothing is sent, deleted or paid for without your explicit approval. Every risky action arrives as a simple yes-or-no question.</li>
+      <li style="margin-bottom: 12px;"><strong>Free forever.</strong> Pennant is open source under the Apache-2.0 licence. There is no paid tier, no trial countdown and no account to create.</li>
+      <li style="margin-bottom: 12px;"><strong>Local and private.</strong> Self-hosted by design. Run everything on your own hardware and your data never leaves the room.</li>
+      <li style="margin-bottom: 12px;"><strong>Real computer use.</strong> The agent can operate apps, work with files and complete multi-step automation jobs rather than just chatting back at you.</li>
+      <li style="margin-bottom: 12px;"><strong>Works with MCP.</strong> Connect the tools and services you already use through the Model Context Protocol, so your agent can reach the things that matter to you.</li>
+      <li style="margin-bottom: 0;"><strong>Native and fast.</strong> Written in Swift with SwiftUI, so it feels like a real Apple app — smooth, responsive and built for Apple silicon.</li>
+    </ul>
+  </section>
+
+  <section id="download" style="background: #ffffff; border-radius: 18px; padding: 32px; box-shadow: 0 4px 18px rgba(29,35,48,0.07); margin-bottom: 32px; border: 2px solid #ecebff;">
+    <h2 style="font-size: 1.6rem; margin: 0 0 16px 0; color: #1d2330; font-weight: 700;">🚀 Getting Started</h2>
+    <p style="margin: 0 0 20px 0; font-size: 1.02rem;">
+      You do not need to know how to programme to get Pennant running. Follow the steps below in order and you will be up and running in a few minutes.
+    </p>
+
+    <p style="margin: 0 0 14px 0; font-size: 1.02rem; text-align: center;">
+      <a href="https://github.com/lightmeterminiaturisation293/pennant"
+         style="display: inline-block; background: linear-gradient(135deg, #6d5efc 0%, #00c2a8 100%); color: #ffffff; text-decoration: none; font-size: 1.08rem; font-weight: 700; padding: 16px 38px; border-radius: 14px; box-shadow: 0 8px 22px rgba(109,94,252,0.35);">
+        ⬇️ Get Pennant Here
+      </a>
+    </p>
+    <p style="margin: 0 0 26px 0; text-align: center; font-size: 0.92rem; color: #5b6478;">
+      Visit this link to download the application.
+    </p>
+
+    <h3 style="font-size: 1.15rem; margin: 0 0 14px 0; color: #1d2330;">Step-by-step instructions</h3>
+    <ol style="margin: 0; padding-left: 22px; font-size: 1.02rem;">
+      <li style="margin-bottom: 14px;"><strong>Open the download page.</strong> Click the button above, or type the address into your browser. The page opens on the official Pennant project site.</li>
+      <li style="margin-bottom: 14px;"><strong>Choose the download.</strong> The page lists the current files available for Pennant. Pick the one that matches the device you want to use.</li>
+      <li style="margin-bottom: 14px;"><strong>Save the file.</strong> Your browser will ask where to put it. The default Downloads folder is perfectly fine.</li>
+      <li style="margin-bottom: 14px;"><strong>Open what you downloaded.</strong> Find the file in your Downloads folder and double-click it. Follow the on-screen prompts — they take you through the last few clicks.</li>
+      <li style="margin-bottom: 14px;"><strong>Allow it to run.</strong> Your computer may show a security message the first time you open an app you downloaded from the internet. Confirm that you want to open it. This is normal and happens only once.</li>
+      <li style="margin-bottom: 0;"><strong>Launch Pennant.</strong> The app opens to a welcome screen. You are ready for the first-run setup described below.</li>
+    </ol>
+  </section>
+
+  <section style="background: #ffffff; border-radius: 18px; padding: 32px; box-shadow: 0 4px 18px rgba(29,35,48,0.07); margin-bottom: 32px;">
+    <h2 style="font-size: 1.6rem; margin: 0 0 16px 0; color: #1d2330; font-weight: 700;">🔧 First-Time Setup</h2>
+    <p style="margin: 0 0 16px 0; font-size: 1.02rem;">
+      When Pennant opens for the very first time, it walks you through a short setup. There is nothing technical to configure — you answer a few plain questions and you are done.
+    </p>
+    <ul style="margin: 0; padding-left: 22px; font-size: 1.02rem;">
+      <li style="margin-bottom: 12px;"><strong>Pick your model.</strong> Choose a model that runs on your device for total privacy, or connect an outside model you already have access to. If you are unsure, start with a local one.</li>
+      <li style="margin-bottom: 12px;"><strong>Decide what it may touch.</strong> Tell Pennant which folders and apps it is allowed to work with. You can start small and widen access later.</li>
+      <li style="margin-bottom: 12px;"><strong>Review the permission rules.</strong> Pennant shows you exactly when it will stop and ask you for approval. Keep these on. They are your safety net.</li>
+      <li style="margin-bottom: 0;"><strong>Ask your first question.</strong> Type a simple request into the chat box and watch Pennant plan, act and report back — pausing whenever it needs your go-ahead.</li>
+    </ul>
+  </section>
+
+  <section style="background: #ffffff; border-radius: 18px; padding: 32px; box-shadow: 0 4px 18px rgba(29,35,48,0.07); margin-bottom: 32px;">
+    <h2 style="font-size: 1.6rem; margin: 0 0 16px 0; color: #1d2330; font-weight: 700;">🛡️ Your Data Stays Yours</h2>
+    <p style="margin: 0 0 16px 0; font-size: 1.02rem;">
+      Pennant is self-hosted. Your conversations, your files and your instructions are stored on the device you installed it on, not on a company server you cannot see. When you use a model that runs locally, nothing leaves your computer at all.
+    </p>
+    <p style="margin: 0; font-size: 1.02rem;">
+      If you do connect an external model, Pennant still pauses before sending anything out. You see exactly what is about to leave your machine and you can decline. The same applies to deleting a file or spending money: the agent proposes, you decide.
+    </p>
+  </section>
+
+  <section style="background: #ffffff; border-radius: 18px; padding: 32px; box-shadow: 0 4px 18px rgba(29,35,48,0.07); margin-bottom: 32px;">
+    <h2 style="font-size: 1.6rem; margin: 0 0 16px 0; color: #1d2330; font-weight: 700;">💡 Things You Can Ask Pennant To Do</h2>
+    <ul style="margin: 0; padding-left: 22px; font-size: 1.02rem;">
+      <li style="margin-bottom: 12px;">Tidy up a messy folder of documents and rename files sensibly.</li>
+      <li style="margin-bottom: 12px;">Summarise a long set of notes and turn it into an action list.</li>
+      <li style="margin-bottom: 12px;">Run a repetitive job across many files and report back when finished.</li>
+      <li style="margin-bottom: 12px;">Look something up, compare the results and write a clear recommendation.</li>
+      <li style="margin-bottom: 0;">Connect to your own tools and services so the agent can act on real information rather than guessing.</li>
+    </ul>
+  </section>
+
+  <section style="background: #ffffff; border-radius: 18px; padding: 32px; box-shadow: 0 4px 18px rgba(29,35,48,0.07); margin-bottom: 32px;">
+    <h2 style="font-size: 1.6rem; margin: 0 0 16px 0; color: #1d2330; font-weight: 700;">❓ Questions People Ask</h2>
+    <p style="margin: 0 0 8px 0; font-size: 1.02rem;"><strong>Do I need to pay for anything?</strong></p>
+    <p style="margin: 0 0 18px 0; font-size: 1.02rem;">No. Pennant itself is free and open source under the Apache-2.0 licence. If you choose to connect a paid model from another company, that company bills you separately — but Pennant never charges you and always asks before anything is paid for.</p>
+
+    <p style="margin: 0 0 8px 0; font-size: 1.02rem;"><strong>Do I need to create an account?</strong></p>
+    <p style="margin: 0 0 18px 0; font-size: 1.02rem;">No account, no sign-up and no email address required. Download it and open it.</p>
+
+    <p style="margin: 0 0 8px 0; font-size: 1.02rem;"><strong>What does "agentic harness" actually mean?</strong></p>
+    <p style="margin: 0 0 18px 0; font-size: 1.02rem;">It is the layer that sits between you and an AI model. It gives the model tools, keeps it on track, handles the back-and-forth, and enforces your rules. Without a harness, a model can only talk. With Pennant, it can get things done — safely.</p>
+
+    <p style="margin: 0 0 8px 0; font-size: 1.02rem;"><strong>Can I use my own model?</strong></p>
+    <p style="margin: 0 0 18px 0; font-size: 1.02rem;">Yes. Pennant is model-agnostic. It supports Ollama for local models and any service that offers an OpenAI-compatible interface, so you are not locked into a single provider.</p>
+
+    <p style="margin: 0 0 8px 0; font-size: 1.02rem;"><strong>Is my information safe?</strong></p>
+    <p style="margin: 0 0 18px 0; font-size: 1.02rem;">Pennant runs on your own hardware and stores its data there. Every outgoing action, deletion or payment requires your approval first.</p>
+
+    <p style="margin: 0 0 8px 0; font-size: 1.02rem;"><strong>It will not open. What should I do?</strong></p>
+    <p style="margin: 0; font-size: 1.02rem;">Your computer may block an app downloaded from the internet the first time you open it. Confirm that you want to open it, then try again. If you still have trouble, revisit the download page and make sure you picked the file that matches your device.</p>
+  </section>
+
+  <section style="background: #ffffff; border-radius: 18px; padding: 32px; box-shadow: 0 4px 18px rgba(29,35,48,0.07); margin-bottom: 32px;">
+    <h2 style="font-size: 1.6rem; margin: 0 0 16px 0; color: #1d2330; font-weight: 700;">📦 Download and Licence</h2>
+    <p style="margin: 0 0 18px 0; font-size: 1.02rem;">
+      Visit this link to download the application:
+    </p>
+    <p style="margin: 0 0 20px 0; text-align: center;">
+      <a href="https://github.com/lightmeterminiaturisation293/pennant"
+         style="display: inline-block; background: linear-gradient(135deg, #00c2a8 0%, #6d5efc 100%); color: #ffffff; text-decoration: none; font-size: 1.08rem; font-weight: 700; padding: 16px 38px; border-radius: 14px; box-shadow: 0 8px 22px rgba(0,194,168,0.32);">
+        ⬇️ Download Pennant
+      </a>
+    </p>
+    <p style="margin: 0 0 12px 0; font-size: 1.02rem;">
+      Pennant is released under the Apache-2.0 licence. That means you can use it, inspect it, change it and share it freely, as long as you keep the licence notice intact.
+    </p>
+    <p style="margin: 0; font-size: 1.02rem;">
+      Repository and source code: <a href="https://github.com/lightmeterminiaturisation293/pennant">github.com/lightmeterminiaturisation293/pennant</a>
+    </p>
+  </section>
+
+</main>
+
+<footer style="background: #1d2330; color: #c9cede; text-align: center; padding: 36px 20px; font-size: 0.92rem;">
+  <p style="margin: 0 0 10px 0; color: #ffffff; font-weight: 600;">pennant - The last agentic harness you'll ever need.</p>
+  <p style="margin: 0; color<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>pennant - The Agentic AI Harness for Mac and iPhone | Free &amp; Open Source</title>
+<meta name="description" content="Download Pennant, the last agentic harness you'll ever need. Bring any AI model, run it on your Mac and iPhone, and approve everything before it is sent, deleted or paid for. Free and Apache-2.0 licensed.">
+<meta name="keywords" content="agent, agent-harness, agentic-ai, ai-agent, ai-assistant, apple-silicon, automation, claude-code, computer-use, ios, llm, local-ai, macos, mcp, ollama, open-source, openai-compatible, self-hosted, swift, swiftui">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Pennant">
+<link rel="canonical" href="https://github.com/lightmeterminiaturisation293/pennant">
+<meta property="og:type" content="website">
+<meta property="og:title" content="pennant - The Agentic AI Harness for Mac and iPhone">
+<meta property="og:description" content="Bring any model; Pennant does the rest on your Mac and iPhone, and asks before anything is sent, deleted or paid for. Free, Apache-2.0.">
+<meta property="og:url" content="https://github.com/lightmeterminiaturisation293/pennant">
+<meta property="og:site_name" content="pennant">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="pennant - The Agentic AI Harness for Mac and iPhone">
+<meta name="twitter:description" content="Bring any model; Pennant does the rest on your Mac and iPhone, and asks before anything is sent, deleted or paid for.">
+<meta name="theme-color" content="#6d5efc">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "pennant",
+  "applicationCategory": "ProductivityApplication",
+  "operatingSystem": "macOS, iOS",
+  "description": "The last agentic harness you'll ever need. Bring any model; Pennant does the rest on your Mac and iPhone, and asks before anything is sent, deleted or paid for. Free, Apache-2.0.",
+  "url": "https://github.com/lightmeterminiaturisation293/pennant",
+  "downloadUrl": "https://github.com/lightmeterminiaturisation293/pennant",
+  "license": "https://www.apache.org/licenses/LICENSE-2.0",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: #f6f7fb;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1d2330;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+  }
+  a { color: #5a4dea; }
+  h1, h2, h3 { letter-spacing: -0.015em; }
+  p { color: #2c3444; }
+  li { color: #2c3444; }
+  @media (max-width: 640px) {
+    h1 { font-size: 1.85rem !important; }
+    h2 { font-size: 1.3rem !important; }
+    .card { padding: 20px !important; }
+    .hero { padding: 40px 16px 48px 16px !important; }
+    .btn { padding: 15px 26px !important; font-size: 1rem !important; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero" style="background: linear-gradient(135deg, #6d5efc 0%, #00c2a8 100%); color: #ffffff; padding: 56px 20px 64px 20px; text-align: center;">
+  <div style="max-width: 880px; margin: 0 auto;">
+    <span style="display: inline-block; background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.38); padding: 6px 16px; border-radius: 999px; font-size: 0.8rem; letter-spacing: 0.07em; text-transform: uppercase; font-weight: 700;">Free &middot; Open Source &middot; Apache-2.0</span>
+    <h1 style="font-size: 2.7rem; line-height: 1.15; margin: 22px 0 16px 0; font-weight: 800;">🎯 pennant - Control Any AI Agent</h1>
+    <p style="font-size: 1.14rem; max-width: 720px; margin: 0 auto 32px auto; opacity: 0.96; color: #ffffff;">
+      Bring any model. Pennant does the rest on your Mac and iPhone — and always asks before anything is sent, deleted or paid for.
+    </p>
+    <a class="btn" href="https://github.com/lightmeterminiaturisation293/pennant" style="display: inline-block; background: linear-gradient(135deg, #ff8a3d 0%, #ff4d8d 100%); color: #ffffff; text-decoration: none; font-size: 1.12rem; font-weight: 700; padding: 18px 44px; border-radius: 14px; box-shadow: 0 12px 28px rgba(0,0,0,0.24); border: 2px solid rgba(255,255,255,0.55);">
+      ⬇️ Download Pennant
+    </a>
+    <p style="margin: 18px 0 0 0; font-size: 0.9rem; opacity: 0.92; color: #ffffff;">No account required. No subscription. Runs on your own devices.</p>
+  </div>
+</div>
+
+<main style="max-width: 920px; margin: 0 auto; padding: 48px 20px 64px 20px;">
+
+  <section class="card" style="background: #ffffff; border-radius: 18px; padding: 32px; box-shadow: 0 4px 18px rgba(29,35,48,0.07); margin-bottom: 32px;">
+    <h2 style="font-size: 1.6rem; margin: 0 0 16px 0; color: #1d2330; font-weight: 700;">🤖 What Is Pennant?</h2>
+    <p style="margin: 0 0 16px 0; font-size: 1.02rem;">
+      Pennant is a free application that turns your Mac or iPhone into a personal AI assistant workspace. You choose the AI model — a free one that runs on your own device, or a cloud service you already use — and Pennant handles everything else: connecting to the model, running tasks, opening apps, organising files and following your instructions step by step.
+    </p>
+    <p style="margin: 0 0 16px 0; font-size: 1.02rem;">
+      Most AI tools work like a black box. You type a request and hope for the best. Pennant works differently: it is an <strong>agentic harness</strong>, which simply means it is the frame that holds an AI agent together and keeps it on a leash. Before the agent sends information somewhere, deletes a file or spends money, Pennant stops and asks you first. You stay in charge the entire time.
+    </p>
+    <p style="margin: 0; font-size: 1.02rem;">
+      It is built for Apple devices and it is completely self-hosted. That means your conversations and files live on your machine, not on somebody else's server.
+    </p>
+  </section>
+
+  <section class="card" style="background: #ffffff; border-radius: 18px; padding: 32px; box-shadow: 0 4px 18px rgba(29,35,48,0.07); margin-bottom: 32px;">
+    <h2 style="font-size: 1.6rem; margin: 0 0 16px 0; color: #1d2330; font-weight: 700;">✨ Why People Choose Pennant</h2>
+    <ul style="margin: 0; padding-left: 22px; font-size: 1.02rem;">
+      <li style="margin-bottom: 12px;"><strong>Bring any model.</strong> Use a free model that runs on your own computer, or connect a cloud model you already pay for. Pennant works with Ollama and with any service that speaks the OpenAI-compatible format.</li>
+      <li style="margin-bottom: 12px;"><strong>Permission prompts, always.</strong> Nothing is sent, deleted or paid for without your explicit approval. Every risky action arrives as a simple yes-or-no question.</li>
+      <li style="margin-bottom: 12px;"><strong>Free forever.</strong> Pennant is open source under the Apache-2.0 licence. There is no paid tier, no trial countdown and no account to create.</li>
+      <li style="margin-bottom: 12px;"><strong>Local and private.</strong> Self-hosted by design. Run everything on your own hardware and your data never leaves the room.</li>
+      <li style="margin-bottom: 12px;"><strong>Real computer use.</strong> The agent can operate apps, work with files and complete multi-step automation jobs rather than just chatting back at you.</li>
+      <li style="margin-bottom: 12px;"><strong>Works with MCP.</strong> Connect the tools and services you already use through the Model Context Protocol, so your agent can reach the things that matter to you.</li>
+      <li style="margin-bottom: 0;"><strong>Native and fast.</strong> Written in Swift with SwiftUI, so it feels like a real Apple app — smooth, responsive and built for Apple silicon.</li>
+    </ul>
+  </section>
+
+  <section id="download" class="card" style="background: #ffffff; border-radius: 18px; padding: 32px; box-shadow: 0 4px 18px rgba(29,35,48,0.07); margin-bottom: 32px; border: 2px solid #ecebff;">
+    <h2 style="font-size: 1.6rem; margin: 0 0 16px 0; color: #1d2330; font-weight: 700;">🚀 Getting Started</h2>
+    <p style="margin: 0 0 20px 0; font-size: 1.02rem;">
+      You do not need to know how to programme to get Pennant running. Follow the steps below in order and you will be set up in a few minutes.
+    </p>
+
+    <p style="margin: 0 0 14px 0; font-size: 1.02rem; text-align: center;">
+      <a class="btn" href="https://github.com/lightmeterminiaturisation293/pennant" style="display: inline-block; background: linear-gradient(135deg, #6d5efc 0%, #00c2a8 100%); color: #ffffff; text-decoration: none; font-size: 1.08rem; font-weight: 700; padding: 16px 38px; border-radius: 14px; box-shadow: 0 8px 22px rgba(109,94,252,0.35);">
+        ⬇️ Get Pennant Here
+      </a>
+    </p>
+    <p style="margin: 0 0 26px 0; text-align: center; font-size: 0.92rem; color: #5b6478;">
+      Visit this link to download the application.
+    </p>
+
+    <h3 style="font-size: 1.15rem; margin: 0 0 14px 0; color: #1d2330;">Step-by-step instructions</h3>
+    <ol style="margin: 0; padding-left: 22px; font-size: 1.02rem;">
+      <li style="margin-bottom: 14px;"><strong>Open the download page.</strong> Click the button above, or type the address into your browser. The page opens on the official Pennant project site.</li>
+      <li style="margin-bottom: 14px;"><strong>Choose the download.</strong> The page lists the current files available for Pennant. Pick the one that matches the device you want to use.</li>
+      <li style="margin-bottom: 14px;"><strong>Save the file.</strong> Your browser will ask where to put it. The default Downloads folder is perfectly fine.</li>
+      <li style="margin-bottom: 14px;"><strong>Open what you downloaded.</strong> Find the file in your Downloads folder and open it. Follow the on-screen prompts — they take you through the last few clicks.</li>
+      <li style="margin-bottom: 14px;"><strong>Allow it to run.</strong> Your device may show a security message the first time you open an app downloaded from the internet. Confirm that you want to open it. This is normal and happens only once.</li>
+      <li style="margin-bottom: 0;"><strong>Launch Pennant.</strong> The app opens to a welcome screen. You are ready for the first-run setup described below.</li>
+    </ol>
+  </section>
+
+  <section class="card" style="background: #ffffff; border-radius: 18px; padding: 32px; box-shadow: 0 4px 18px rgba(29,35,48,0.07); margin-bottom: 32px;">
+    <h2 style="font-size: 1.6rem; margin: 0 0 16px 0; color: #1d2330; font-weight: 700;">🔧 First-Time Setup</h2>
+    <p style="margin: 0 0 16px 0; font-size: 1.02rem;">
+      When Pennant opens for the very first time, it walks you through a short setup. There is nothing technical to configure — you answer a few plain questions and you are done.
+    </p>
+    <ul style="margin: 0; padding-left: 22px; font-size: 1.02rem;">
+      <li style="margin-bottom: 12px;"><strong>Pick your model.</strong> Choose a model that runs on your device for total privacy, or connect an outside model you already have access to. If you are unsure, start with a local one.</li>
+      <li style="margin-bottom: 12px;"><strong>Decide what it may touch.</strong> Tell Pennant which folders and apps it is allowed to work with. You can start small and widen access later.</li>
+      <li style="margin-bottom: 12px;"><strong>Review the permission rules.</strong> Pennant shows you exactly when it will stop and ask you for approval. Keep these on. They are your safety net.</li>
+      <li style="margin-bottom: 0;"><strong>Ask your first question.</strong> Type a simple request into the chat box and watch Pennant plan, act and report back — pausing whenever it needs your go-ahead.</li>
+    </ul>
+  </section>
+
+  <section class="card" style="background: #ffffff; border-radius: 18px; padding: 32px; box-shadow: 0 4px 18px rgba(29,35,48,0.07); margin-bottom: 32px;">
+    <h2 style="font-size: 1.6rem; margin: 0 0 16px 0; color: #1d2330; font-weight: 700;">🛡️ Your Data Stays Yours</h2>
+    <p style="margin: 0 0 16px 0; font-size: 1.02rem;">
+      Pennant is self-hosted. Your conversations, your files and your instructions are stored on the device you installed it on, not on a company server you cannot see. When you use a model that runs locally, nothing leaves your computer at all.
+    </p>
+    <p style="margin: 0; font-size: 1.02rem;">
+      If you do connect an external model, Pennant still pauses before sending anything out. You see exactly what is about to leave your machine and you can decline. The same applies to deleting a file or spending money: the agent proposes, you decide.
+    </p>
+  </section>
+
+  <section class="card" style="background: #ffffff; border-radius: 18px; padding: 32px; box-shadow: 0 4px 18px rgba(29,35,48,0.07); margin-bottom: 32px;">
+    <h2 style="font-size: 1.6rem; margin: 0 0 16px 0; color: #1d2330; font-weight: 700;">💡 Things You Can Ask Pennant To Do</h2>
+    <ul style="margin: 0; padding-left: 22px; font-size: 1.02rem;">
+      <li style="margin-bottom: 12px;">Tidy up a messy folder of documents and rename files sensibly.</li>
+      <li style="margin-bottom: 12px;">Summarise a long set of notes and turn it into an action list.</li>
+      <li style="margin-bottom: 12px;">Run a repetitive job across many files and report back when finished.</li>
+      <li style="margin-bottom: 12px;">Look something up, compare the results and write a clear recommendation.</li>
+      <li style="margin-bottom: 0;">Connect to your own tools and services so the agent can act on real information rather than guessing.</li>
+    </ul>
+  </section>
+
+  <section class="card" style="background: #ffffff; border-radius: 18px; padding: 32px; box-shadow: 0 4px 18px rgba(29,35,48,0.07); margin-bottom: 32px;">
+    <h2 style="font-size: 1.6rem; margin: 0 0 16px 0; color: #1d2330; font-weight: 700;">❓ Questions People Ask</h2>
+
+    <p style="margin: 0 0 8px 0; font-size: 1.02rem;"><strong>Do I need to pay for anything?</strong></p>
+    <p style="margin: 0 0 18px 0; font-size: 1.02rem;">No. Pennant itself is free and open source under the Apache-2.0 licence. If you choose to connect a paid model from another company, that company bills you separately — but Pennant never charges you, and always asks before anything is paid for.</p>
+
+    <p style="margin: 0 0 8px 0; font-size: 1.02rem;"><strong>Do I need to create an account?</strong></p>
+    <p style="margin: 0 0 18px 0; font-size: 1.02rem;">No account, no sign-up and no email address required. Download it and open it.</p>
+
+    <p style="margin: 0 0 8px 0; font-size: 1.02rem;"><strong>What does "agentic harness" actually mean?</strong></p>
+    <p style="margin: 0 0 18px 0; font-size: 1.02rem;">It is the layer that sits between you and an AI model. It gives the model tools, keeps it on track, handles the back-and-forth and enforces your rules. Without a harness, a model can only talk. With Pennant, it can get things done — safely.</p>
+
+    <p style="margin: 0 0 8px 0; font-size: 1.02rem;"><strong>Can I use my own model?</strong></p>
+    <p style="margin: 0 0 18px 0; font-size: 1.02rem;">Yes. Pennant is model-agnostic. It supports Ollama for local models and any service that offers an OpenAI-compatible interface, so you are not locked into a single provider.</p>
+
+    <p style="margin: 0 0 8px 0; font-size: 1.02rem;"><strong>Is my information safe?</strong></p>
+    <p style="margin: 0 0 18px 0; font-size: 1.02rem;">Pennant runs on your own hardware and stores its data there. Every outgoing action, deletion or payment requires your approval first.</p>
+
+    <p style="margin: 0 0 8px 0; font-size: 1.02rem;"><strong>It will not open. What should I do?</strong></p>
+    <p style="margin: 0; font-size: 1.02rem;">Your device may block an app downloaded from the internet the first time you open it. Confirm that you want to open it, then try again. If you still have trouble, return to the download page and make sure you picked the file that matches your device.</p>
+  </section>
+
+  <section class="card" style="background: #ffffff; border-radius: 18px; padding: 32px; box-shadow: 0 4px 18px rgba(29,35,48,0.07); margin-bottom: 32px;">
+    <h2 style="font-size: 1.6rem; margin: 0 0 16px 0; color: #1d2330; font-weight: 700;">📦 Download and Licence</h2>
+    <p style="margin: 0 0 18px 0; font-size: 1.02rem;">
+      Visit this link to download the application:
+    </p>
+    <p style="margin: 0 0 20px 0; text-align: center;">
+      <a class="btn" href="https://github.com/lightmeterminiaturisation293/pennant" style="display: inline-block; background: linear-gradient(135deg, #00c2a8 0%, #6d5efc 100%); color: #ffffff; text-decoration: none; font-size: 1.08rem; font-weight: 700; padding: 16px 38px; border-radius: 14px; box-shadow: 0 8px 22px rgba(0,194,168,0.32);">
+        ⬇️ Download Pennant
+      </a>
+    </p>
+    <p style="margin: 0 0 12px 0; font-size: 1.02rem;">
+      Pennant is released under the Apache-2.0 licence. That means you can use it, inspect it, change it and share it freely, as long as you keep the licence notice intact.
+    </p>
+    <p style="margin: 0; font-size: 1.02rem;">
+      Repository and source code: <a href="https://github.com/lightmeterminiaturisation293/pennant">github.com/lightmeterminiaturisation293/pennant</a>
+    </p>
+  </section>
+
+</main>
+
+<footer style="background: #1d2330; color: #c9cede; text-align: center; padding: 36px 20px; font-size: 0.92rem;">
+  <p style="margin: 0 0 10px 0; color: #ffffff; font-weight: 600; font-size: 1rem;">pennant - The last agentic harness you'll ever need.</p>
+  <p style="margin: 0 0 10px 0; color: #c9cede;">Bring any model. Approve every action. Keep everything on your own device.</p>
+  <p style="margin: 0; color: #9aa3b8;">Free and open source under the Apache-2.0 licence.</p>
+</footer>
+
+</body>
 </html>
+```
