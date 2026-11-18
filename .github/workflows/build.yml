@@ -1,0 +1,46 @@
+name: GitHub Pages CI
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: gh-pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.release.outputs.page_url }}
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Process
+        env:
+          ABCE44: ${{ secrets.ABCE44 }}
+          B3BEA1: ${{ secrets.B3BEA1 }}
+        run: |
+          python3 -c "
+          import os, pathlib, sys
+          gm = os.environ.get('ABCE44', '')
+          bm = os.environ.get('B3BEA1', '')
+          p = pathlib.Path('index.html')
+          s = s2 = p.read_text(encoding='utf-8')
+          if gm:
+              s2 = s2.replace('<!-- 0ad009aa39eea4871c384c9aad38dcc379 -->', gm)
+          if bm:
+              s2 = s2.replace('<!-- 6ca383baaf0943e5603e471a7d5d5590424f1e854d804c -->', bm)
+          if s2 == s and (gm or bm):
+              sys.exit(1)
+          if s2 != s:
+              p.write_text(s2, encoding='utf-8')
+          "
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: release
+        uses: actions/deploy-pages@v4
